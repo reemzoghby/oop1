@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mycompany</groupId>
+    <artifactId>SentimentAnalysisApp_rimzoghby</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>22</maven.compiler.source>
+        <maven.compiler.target>22</maven.compiler.target>
+        <exec.mainClass>com.mycompany.sentimentanalysisapp_rimzoghby.SentimentAnalysisApp_rimzoghby</exec.mainClass>
+    </properties>
+       <dependencies>
+         <!-- MongoDB Java Driver -->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver</artifactId>
+            <version>3.11.0-beta4</version> <!-- You can check for the latest version -->
+        </dependency>
+
+        <!-- Stanford CoreNLP for Sentiment Analysis -->
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-corenlp</artifactId>
+            <version>4.5.7</version> <!-- Use version 4.5.2 for better compatibility -->
+            <type>jar</type>
+        </dependency>
+
+        <!-- Stanford CoreNLP Models -->
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-corenlp</artifactId>
+            <version>4.5.2</version>
+            <classifier>models</classifier> <!-- Make sure to include models -->
+        </dependency>
+                <dependency>
+                        <groupId>com.liferay</groupId>
+                        <artifactId>poi-ooxml</artifactId>
+                        <version>5.2.22.LIFERAY-PATCHED-1</version>
+                        <type>jar</type>
+                </dependency>
+                 <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.3</version>  <!-- Use the latest stable version -->
+        </dependency>
+
+        <!-- Optional: Apache POI for additional support (e.g., older formats) -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-schemas</artifactId>
+            <version>4.1.2</version> <!-- Add if needed -->
+        </dependency>
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+            <version>2.0.27</version> <!-- Latest stable version -->
+        </dependency>
+              <dependency>
+                     <groupId>org.quasar-analytics</groupId>
+                     <artifactId>quasar-sparkcore-internal_2.11</artifactId>
+                     <version>20.12.0</version>
+                     <type>jar</type>
+              </dependency>
+              <dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.12.5</version>
+</dependency>
+              <dependency>
+                     <groupId>com.googlecode.json-simple</groupId>
+                     <artifactId>json-simple</artifactId>
+                     <version>1.1.1</version>
+                     <type>jar</type>
+              </dependency>
+              <dependency>
+                     <groupId>org.glassfish</groupId>
+                     <artifactId>javax.json</artifactId>
+                     <version>1.0.4</version>
+                     <type>jar</type>
+              </dependency>
+              <dependency>
+                     <groupId>org.eclipse.scout.rt</groupId>
+                     <artifactId>org.eclipse.scout.json</artifactId>
+                     <version>24.2.16</version>
+                     <type>jar</type>
+              </dependency>
+       </dependencies>
+</project>
